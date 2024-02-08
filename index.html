@@ -26,7 +26,7 @@
         <div class="flex align-centre justify-centre">Search</div>
     </div>
 
-    <div class="relative w-full" data-carousel="slide">
+    <!-- <div class="relative w-full" data-carousel="slide">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div class="duration-700 ease-in-out" data-carousel-item>
                 <img src="images/slider-img-01.jpg" alt="slider_image1">
@@ -43,18 +43,18 @@
             <div class="duration-700 ease-in-out" data-carousel-item>
                 <img src="images/slider-img-05.jpg" alt="slider_image5">
             </div>
-        </div>
+        </div> -->
 
         <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
             <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-        </div>
+        </div> -->
         <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <!-- <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
@@ -70,82 +70,194 @@
                 <span class="sr-only">Next</span>
             </span>
         </button>
-    </div>
+    </div> -->
 
-
-
-
-    <div class="flex py-12 px-28 justify-evenly items-centre w-full h-auto">
-        <div class="flex flex-col rounded-lg shadow-md p-10">
-            <div>
-                <span class="font-bold" >PSL</span> 
-                <span class="font-bold text-green-600">DICTIONARY</span>
+    <div class="relative w-full">
+        <input type="radio" id="slide1" name="slide" class="hidden" checked>
+        <input type="radio" id="slide2" name="slide" class="hidden">
+        <input type="radio" id="slide3" name="slide" class="hidden">
+        <input type="radio" id="slide4" name="slide" class="hidden">
+        <input type="radio" id="slide5" name="slide" class="hidden">
+    
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="absolute w-full h-full top-0 left-0 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none">
+                <div class="duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/slider-img-01.jpg" alt="slider_image1">
+                </div>
+                <div class="duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/slider-img-02.jpg" alt="slider_image2">
+                </div>
+                <div class="duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/slider-img-03.jpg" alt="slider_image3">
+                </div>
+                <div class="duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/slider-img-04.jpg" alt="slider_image4">
+                </div>
+                <div class="duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/slider-img-05.jpg" alt="slider_image5">
+                </div>
             </div>
-            <div>
-                <img src="images/psl-dictionary-icon.svg" alt="PSL Dctionary SVG">
-            </div>
-            <div>
-                <span>Over 6000</span>
-                <span>Words</span>
+    
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <label for="slide1" class="w-3 h-3 rounded-full cursor-pointer" aria-label="Slide 1"></label>
+                <label for="slide2" class="w-3 h-3 rounded-full cursor-pointer" aria-label="Slide 2"></label>
+                <label for="slide3" class="w-3 h-3 rounded-full cursor-pointer" aria-label="Slide 3"></label>
+                <label for="slide4" class="w-3 h-3 rounded-full cursor-pointer" aria-label="Slide 4"></label>
+                <label for="slide5" class="w-3 h-3 rounded-full cursor-pointer" aria-label="Slide 5"></label>
             </div>
         </div>
-        <div class="flex flex-col rounded-lg shadow-md p-10">
+    </div>
+    
+
+
+    <!-- Third Display -- FOUR DIVS IN A ROW -->
+<!-- Main DIV -->
+<div class="relative">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0"><img src="images/background.jpg" alt="Background Image" class="w-full h-full object-cover"></div>
+
+    <!-- Title and Description -->
+    <div class="flex flex-wrap py-12 px-28 justify-evenly items-center relative z-10">
+
+        <!-- Item 1 -->
+        <div class="flex flex-col rounded-lg shadow-md p-7 mx-5 bg-white w-30 h-30">
+            <div class="pb-5">
+                <span class="font-bold text-centre">PSL</span> 
+                <span class="font-bold text-green-600 text-centre">DICTIONARY</span>
+            </div>
+            <div class="pb-5">
+                <img src="images/psl-dictionary-icon.svg" alt="PSL Dictionary Image">
+            </div>
             <div>
+                <span class="font-bold">Over 6000</span><br>
+                <span class="font-sans text-green-600">Words</span>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex flex-col rounded-lg shadow-md p-7 mx-5 bg-white w-30 h-30">
+            <div class="pb-5">
                 <span class="font-bold" >TEACHER</span> 
                 <span class="font-bold text-green-600">TUTORIALS</span>
             </div>
-            <div>
+            <div class="w-full h-auto pb-5">
                 <img src="images/psl-teacher-icon.svg" alt="Teacher Tutorial SVG">
             </div>
             <div>
-                <span>Over 6000</span>
-                <span>Words</span>
+                <span class="font-bold">OVER 500</span><br>
+                <span class="font-sans text-green-600">TUTORIALS</span>
             </div>
         </div>
-        <div class="flex flex-col rounded-lg shadow-md p-10">
-            <div>
+
+        <!-- Item 3 -->
+        <div class="flex flex-col rounded-lg shadow-md p-7 mx-5 bg-white w-30 h-30">
+            <div class="pb-5 align-centre">
                 <span class="font-bold" >PSL</span> 
                 <span class="font-bold text-green-600">STORIES</span>
             </div>
-            <div>
-                <img src="images/psl-story-icon.svg" alt="PSL Dctionary SVG">
+            <div class="pb-5">
+                <img src="images/psl-story-icon.svg" alt="PSL Story SVG">
             </div>
             <div>
-                <span>Over 6000</span>
-                <span>Words</span>
+                <span class="font-bold">OVER 100</span><br>
+                <span class="font-sans text-green-600">STORIES</span>
             </div>
         </div>
-        <div class="flex flex-col rounded-lg shadow-md p-10">
-            <div>
+
+        <!-- Item 4 -->
+        <div class="flex flex-col rounded-lg shadow-md p-7 mx-5 bg-white w-30 h-30">
+            <div class="pb-5">
                 <span class="font-bold" >LEARNING</span> 
                 <span class="font-bold text-green-600">TUTORIALS</span>
             </div>
-            <div>
-                <img src="images/psl-learning-icon.svg" alt="PSL Dctionary SVG">
+            <div class="pb-5">
+                <img src="images/psl-learning-icon.svg" alt="PSL Learning SVG">
             </div>
             <div>
-                <span>Over 6000</span>
-                <span>Words</span>
-            </div>
-        </div>
-       
-        
-    </div>
-
-
-    <div class="">
-        <div class=""><img src="" alt=""></div>
-        <div class="">
-            <div class="">About PSL</div>
-            <div class="">The Deaf Reach Program
-                <a href="">Learn More</a>
+                <span class="font-bold">Over 700</span><br>
+                <span class="font-sans text-green-600">TUTORIALS</span>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="">
-        Recommend a word
+    <!-- Fourth Display -- ABOUT PSL -->
+    <div class="flex flex-row w-full h-auto px-28 py-10 justify-evenly">
+
+        <!-- Image Div -->
+        <div class="w-[45%]"><img src="images/left-images.jpg" alt="About PSL image"></div>
+
+        <!-- ABOUT PSL TEXT AND LINK -->
+        <div class="flex flex-col w-[45%] h-auto py-3 mx-3">
+
+            <!-- TITLE -->
+            <div class="pb-5">
+                <span class="text-2xl font-bold">About</span>
+                <span class="text-2xl font-bold text-green-600">PSL</span>
+
+                <!-- Horizontal Break/Line -->
+                <hr class="w-20 h-0.5 rounded-full bg-green-600 my-3">
+
+                <!-- Description -->
+                <p class="font-normal text-sm leading-[1.3]">For the 1st time in Pakistan – a wealth of Pakistan Sign Language learning resources at your fingertips! An invaluable resource for deaf students and their families, those involved in Deaf education, and anyone who wants to learn an exciting new language.</p>
+            </div>
+
+            <div>
+                <!-- TITLE -->
+                <span class="text-2xl font-bold">The Deaf Reach Program</span>
+
+                <!-- Horizontal Break/Line -->
+                <hr class="w-20 h-0.5 rounded-full bg-green-600 my-3">
+
+                <!-- Description -->
+                <p class="font-normal text-sm leading-[1.3]">Deaf Reach Schools and Training Centers, a program of Family Educational Services Foundation (FESF), envisions a future where education is a reality for all deaf children in Pakistan. By investing in PSL learning resources, Deaf Reach is working to make literacy, education and skills training...
+                </p><br>
+
+                <!-- LEARN MORE BUTTON -->
+                <span class="border-[0.1rem] border-green-600 rounded-md text-green-600 px-3 py-1.5 text-xs font-semibold">
+                    <a href="">LEARN MORE</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIFTH DISPLAY -- RECOMMEND A WORD FORM -->
+    <div class="flex justify-evenly w-full h-auto px-32 py-10 text-white">
+
+
+        <div class="flex w-full h-auto bg-green-600">
+            <!-- FORM AREA / INPUT PORTION -->
+            <div class="flex flex-col w-full h-auto rounded-lg px-7 py-5">
+
+                <!-- TITLE -->
+                <span class="text-2xl font-bold">RECOMMEND A WORD</span>
+
+                <!-- Horizontal Break/Line -->
+                <hr class="w-20 h-0.5 rounded-full bg-white my-3">
+
+                <span>Do you want us to add a sign to the PSL Dictionary?</span>
+                <span>Send us your suggestion.</span>
+
+                <!-- INPUT FIELDS -->
+                <br>
+                <div class="flex">
+                    <input type="text" name="" id="" placeholder="NAME" class="bg-green-700 rounded-sm focus:bg-white focus:text-black w-[40%] inline mr-10 placeholder-gray-300 placeholder:text-xs placeholder:pl-2">
+                    <input type="text" name="" id="" placeholder="EMAIL" class="bg-green-700 rounded-sm focus:bg-white focus:text-black w-[40%] inline placeholder-gray-300 placeholder:text-xs placeholder:pl-2">
+                </div>
+                <br>
+                <input type="text" name="" id="" placeholder="TYPE YOUR WORDS...." class="bg-green-700 rounded-sm focus:bg-white focus:text-black w-[90%] inline placeholder-gray-300 placeholder:text-xs placeholder:pl-2"><br>
+
+                <!-- SUBMIT BUTTON -->
+                <button class="border-[0.1rem] border-white rounded-md text-white px-3 py-1.5 text-xs font-semibold w-[15%]">SUBMIT</button>
+            </div>
+
+            <!-- IMAGE AT LEFT -->
+            <div class="z-10 relative ">
+                <img src="images/recomnend-img.png" alt="Recommend Image">
+            </div>
+        </div>
     </div>
 
 
