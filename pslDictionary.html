@@ -4,8 +4,292 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSL Dictionary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Your+Font&display=swap" rel="stylesheet">
+
 </head>
-<body>
+
+
+
+<body class="bg-[#f6f6f6]">
+    <div class="fixed w-full">
+        <div class="flex w-full space-x-7 bg-white text-center items-center">
+            <div><img src="images/home_images/psl-logo.png" alt="PSL logo" class="p-1 w-[70%] h-[90%]"></div>
+            <a href="index.html" class="hover:text-[#01944a] pt-5 align-centre">Home</a>
+            <a href="pslDictionary.html" class="hover:text-[#01944a] pt-5 align-centre">PSL Dictionary</a>
+            <a href="teacherTutorials.html" class="hover:text-[#01944a] pt-5 align-centre">Teacher Tutorials</a>
+            <a href="pslStories.html" class="hover:text-[#01944a] pt-5 align-centre">PSL Stories</a>
+            <a href="learningTutorials.html" class="hover:text-[#01944a] pt-5 align-centre">Learning Tutorials</a>
+            <a href="iqraProgram.html" class="hover:text-[#01944a] pt-5 align-centre">Iqra Program</a>
+            <a href="resources.html" class="hover:text-[#01944a] pt-5 align-centre">Resources</a>
+            <a href="aboutUs.html" class="hover:text-[#01944a] pt-5 align-centre">About Us</a>
+        </div>
+        <hr class="w-full h-1 bg-[#01944a]">
+
+
+        <div class="flex flex-col">
+            <div class="w-full h-auto hidden"></div>
+            <div class="w-full h-5 bg-[#01944a]"></div>
+            <div class="flex align-centre justify-centre">Search</div>
+        </div>
+    </div>
+
+
+    <!-- ITEMS / BOXES / CONTENT -->
+    <div id="divs_holder" class="grid grid-cols-5 grid-items-center p-32">
+        
+
+    </div>
+    
+
+    <!-- FOOTER -->
+    <div class="flex justify-evenly w-full h-auto px-24 py-10 mt-8 overflow-hidden bg-[#01944a] text-green-200 text-sm">
+
+        <!-- Quick Links -->
+        <div class="flex flex-col w-[30%] leading-7 tracking-wider">
+            <span class="font-semibold text-lg text-white py-2">Quick Links</span>
+            <a href="">- PSL Dictionary</a>
+            <a href="">- Learning Tutorials</a>
+            <a href="">- Teacher Tutorials</a>
+            <a href="">- PSL Stories</a>
+            <a href="">- Iqra Program</a>
+            <a href="">- Resources</a>
+            <a href="">- The Deaf Reach Program</a>
+            <a href="">- Contact Us</a>
+
+        </div>
+
+
+        <!-- Subscribe Portion -->
+        <div class="flex flex-col w-[30%] leading-8 tracking-wider">
+            <span class="font-semibold text-md text-white py-2">SUBSCRIBE</span>
+            <span>Subscribe to connect with us!</span>
+            <input type="text" name="" id="" placeholder="EMAIL" class="bg-white rounded-sm focus:bg-white focus:text-black w-[80%] inline placeholder:text-xs placeholder:pl-2">
+
+            <!-- Subscribe button -->
+            <button class="border-[0.1rem] border-white rounded-sm text-white py-1.5 text-xs font-semibold w-[80%] mt-5">SUBSCRIBE</button>
+        </div>
+        
+        
+
+
+        <!-- Download PSL App -->
+        <div class="flex flex-col w-[30%] leading-10 justify-centre items-start align-centre tracking-wider">
+            <span class="font-semibold text-lg text-white py-2 ">Download PSL App</span>
+            <span>Download PSL App</span>
+
+
+            <!-- Link With Images -->
+            <div class="flex">
+                <a href="https://play.google.com/store/apps/details?id=com.grappetite.fesf.psl" class="pr-5">
+                    <img src="images/home_images/playstore.png" alt="Play Store Button">
+                </a>
+                <a href="https://apps.apple.com/us/app/pakistan-sign-language-psl/id955003505">
+                    <img src="images/home_images/appstore.png" alt="Apple Store Button">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- JS FOR AUTOMATING THE DIVS -->
+    <script>
+
+        const divs_holder = document.getElementById("divs_holder");
+
+        // Data for each category box (image URLs and text)
+        const imgSrc = ["images/PSL_dictionary_images/ABC-one-handed-capital.svg",
+            "images/PSL_dictionary_images/ABC-two-handed-small.svg",
+            "images/PSL_dictionary_images/Adjective.jpg",
+            "images/PSL_dictionary_images/Adverbs.jpg",
+            "images/PSL_dictionary_images/Airport.jpg",
+            "images/PSL_dictionary_images/Alphabet-Urdu.jpg",
+            "images/PSL_dictionary_images/appliances.jpg",
+            "images/PSL_dictionary_images/Around-The_House.jpg",
+            "images/PSL_dictionary_images/Arts.jpg",
+            "images/PSL_dictionary_images/Automobile.svg",
+            "images/PSL_dictionary_images/Banking.jpg",
+            "images/PSL_dictionary_images/Bathroom.jpg",
+            "images/PSL_dictionary_images/Beach.jpg",
+            "images/PSL_dictionary_images/Beauty.jpg",
+            "images/PSL_dictionary_images/Bedroom.jpg",
+            "images/PSL_dictionary_images/Birds.jpg",
+            "images/PSL_dictionary_images/Body.jpg",
+            "images/PSL_dictionary_images/Brand.jpg",
+            "images/PSL_dictionary_images/Buildings-Places.jpg",
+            "images/PSL_dictionary_images/Burger.jpg",
+            "images/PSL_dictionary_images/Calendar-time.jpg",
+            "images/PSL_dictionary_images/Carpentry.jpg",
+            "images/PSL_dictionary_images/Classroom.jpg",
+            "images/PSL_dictionary_images/Cleaning.jpg",
+            "images/PSL_dictionary_images/Clothes&Accessories.jpg",
+            "images/PSL_dictionary_images/Colors.jpg",
+            "images/PSL_dictionary_images/Computer.jpg",
+            "images/PSL_dictionary_images/Construction.svg",
+            "images/PSL_dictionary_images/Countries&Continents.jpg",
+            "images/PSL_dictionary_images/Death-Funeral.jpg",
+            "images/PSL_dictionary_images/Drinks.jpg",
+            "images/PSL_dictionary_images/Education.jpg",
+            "images/PSL_dictionary_images/Family&Marriage.jpg",
+            "images/PSL_dictionary_images/Famous.jpg",
+            "images/PSL_dictionary_images/Farming&Agriculture.jpg",
+            "images/PSL_dictionary_images/Flowers&Trees.jpg",
+            "images/PSL_dictionary_images/Food&General.jpg",
+            "images/PSL_dictionary_images/Food.jpg",
+            "images/PSL_dictionary_images/Fruits.jpg",
+            "images/PSL_dictionary_images/Geography.jpg",
+            "images/PSL_dictionary_images/Government.jpg",
+            "images/PSL_dictionary_images/Grammar.jpg",
+            "images/PSL_dictionary_images/Health&MedicalCare.jpg",
+            "images/PSL_dictionary_images/Holidays&Celebrations.jpg",
+            "images/PSL_dictionary_images/Hospitality.svg",
+            "images/PSL_dictionary_images/Hygiene.jpg",
+            "images/PSL_dictionary_images/Insects&Spiders&Reptiles.jpg",
+            "images/PSL_dictionary_images/islamic-signs.svg",
+            "images/PSL_dictionary_images/Jewellery.jpg",
+            "images/PSL_dictionary_images/KFC.svg",
+            "images/PSL_dictionary_images/Kitchen.jpg",
+            "images/PSL_dictionary_images/Law&Order.jpg",
+            "images/PSL_dictionary_images/Life&Training.jpg",
+            "images/PSL_dictionary_images/Living.jpg",
+            "images/PSL_dictionary_images/Mammals.jpg",
+            "images/PSL_dictionary_images/Marine.jpg",
+            "images/PSL_dictionary_images/Mathematics.jpg",
+            "images/PSL_dictionary_images/Media.jpg",
+            "images/PSL_dictionary_images/Military.jpg",
+            "images/PSL_dictionary_images/Music&Dance.jpg",
+            "images/PSL_dictionary_images/Nouns&General.jpg",
+            "images/PSL_dictionary_images/Numbers.jpg",
+            "images/PSL_dictionary_images/Office.jpg",
+            "images/PSL_dictionary_images/Pakistan&Places.jpg",
+            "images/PSL_dictionary_images/Prepositions.jpg",
+            "images/PSL_dictionary_images/Professions.jpg",
+            "images/PSL_dictionary_images/Pronouns.jpg",
+            "images/PSL_dictionary_images/Science.jpg",
+            "images/PSL_dictionary_images/Sentences.jpg",
+            "images/PSL_dictionary_images/Sewing.jpg",
+            "images/PSL_dictionary_images/Space.jpg",
+            "images/PSL_dictionary_images/Spices.jpg",
+            "images/PSL_dictionary_images/Sports-Games.jpg",
+            "images/PSL_dictionary_images/Textiles.svg",
+            "images/PSL_dictionary_images/Transport.jpg",
+            "images/PSL_dictionary_images/Vegetables.jpg",
+            "images/PSL_dictionary_images/Verbs.jpg",
+            "images/PSL_dictionary_images/Vocational-General.jpg",
+            "images/PSL_dictionary_images/Weather.jpg"
+        ];
+
+        const allText = [
+                "ABC - One - Handed",
+                "ABC - Two - Handed",
+                "Adjectives",
+                "Adverbs",
+                "Airport",
+                "Alphabets - Urdu",
+                "Appliances",
+                "Around The House",
+                "Arts",
+                "Automobile",
+                "Banking",
+                "Bathroom",
+                "Beach",
+                "Beauty",
+                "Bedroom",
+                "Birds",
+                "Body",
+                "Brand",
+                "Buildings  &  Places",
+                "Burger",
+                "Calendar  &  time",
+                "Carpentry",
+                "Classroom",
+                "Cleaning",
+                "Clothes  &  Accessories",
+                "Colors",
+                "Computer",
+                "Construction",
+                "Countries  &  Continents",
+                "Death  &  Funeral",
+                "Drinks",
+                "Education",
+                "Family  &  Marriage",
+                "Famous",
+                "Farming  &  Agriculture",
+                "Flowers  &  Trees",
+                "Food  &  General",
+                "Food",
+                "Fruits",
+                "Geography",
+                "Government",
+                "Grammar",
+                "Health  &  Medical Care",
+                "Holidays  &  Celebrations",
+                "Hospitality",
+                "Hygiene",
+                "Insects, Spiders  &  Reptiles",
+                "Islamic Signs",
+                "Jewellery",
+                "KFC",
+                "Kitchen",
+                "Law & Order",
+                "Life & Training",
+                "Living",
+                "Mammals",
+                "Marine",
+                "Mathematics",
+                "Media",
+                "Military",
+                "Music & Dance",
+                "Nouns - General",
+                "Numbers",
+                "Office",
+                "Pakistan & Places",
+                "Prepositions",
+                "Professions",
+                "Pronouns",
+                "Science",
+                "Sentences",
+                "Sewing",
+                "Space",
+                "Spices",
+                "Sports & Games",
+                "Textiles",
+                "Transport",
+                "Vegetables",
+                "Verbs",
+                "Vocational & General",
+                "Weather"
+        ];
+
+
+        // Loop to generate divs with unique content
+        for(i = 0; i < (imgSrc.length); i++){
+
+            const Div = document.createElement("div");
+            Div.classList.add("py-10", "pb-5", "px-5", "rounded-lg", "bg-white" , "shadow-lg", "hover:bg-[#009e4f]", "hover:text-white", "mb-3", "mr-3", "flex", "flex-col", "justify-centre", "items-center", "text-center");
+
+            const Img = document.createElement("img");
+            Img.src = imgSrc[i];
+            Img.alt = "Dictionary Image";
+            Img.classList.add("mb-5", "w-[50%]",  "h-[70%]", "hover:opacity-0");
+
+            const Span = document.createElement("span");
+            Span.textContent = allText[i];
+            Span.classList.add("text-sm")
+
+            Div.appendChild(Img);
+            Div.appendChild(Span);
+
+            divs_holder.appendChild(Div);
+        }
+    </script>
     
 </body>
 </html>
