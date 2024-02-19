@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Your+Font&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div>
+        <!-- Navigator Bar -->
+        <div class="flex w-full space-x-7 bg-white items-center justify-centre ">
+            <div><img src="images/home_images/psl-logo.png" alt="PSL logo" class="p-1 w-[70%] h-[90%]"></div>
+            <a href="index.html" class="hover:text-[#01944a] align-center">Home</a>
+            <a href="pslDictionary.html" class="hover:text-[#01944a] align-centre">PSL Dictionary</a>
+            <a href="teacherTutorials.html" class="hover:text-[#01944a] align-centre">Teacher Tutorials</a>
+            <a href="pslStories.html" class="hover:text-[#01944a] align-centre">PSL Stories</a>
+            <a href="learningTutorials.html" class="hover:text-[#01944a] align-centre">Learning Tutorials</a>
+            <a href="iqraProgram.html" class="hover:text-[#01944a] align-centre">Iqra Program</a>
+            <a href="resources.html" class="hover:text-[#01944a] align-centre">Resources</a>
+            <a href="aboutUs.html" class="hover:text-[#01944a] align-centre hover:dropdownDisplay()">About Us</a>
+        </div>
+    
+
+        <!-- DropDown Of About -->
+        <div id="DropDown" class="flex flex-col text-black text-[0.9rem] px-5 w-[17%] shadow-lg h-auto absolute top-12 right-32 invisible">
+            <a href="" class="py-1.5">About PSL</a><hr class="w-[80%]">
+            <a href="" class="py-1.5">About FESF</a><hr>
+            <a href="" class="py-1.5">The Deaf Reach Program</a><hr>
+            <a href="" class="py-1.5">Testimonials</a><hr>
+            <a href="" class="py-1.5">Partners</a><hr>
+            <a href="" class="py-1.5">FAQs</a>
+        </div>
+
+        <hr class="w-full h-1 bg-[#01944a]">
+    
+         
+        <div>Search</div>
+
+
+        <!-- First Display -->
+        <div class="relative w-full h-auto">
+            <img src="images/deafReachProgram_images/deaf-reach-program-bg.e2904b00ea2a2db55dd9.jpg" alt="Resources BG Image" class="absolute inset-0 w-full h-full object-cover">
+
+
+            <!-- Two flex divs with text and image -->
+            <div class="relative z-10 flex p-24 px-36 items-center text-white">
+
+                <div class="w-[50%] text-sm">
+                    <span class="font-bold text-5xl">THE DEAF <br>REACH PROGRAM</span>
+                    
+                    <hr class="w-[20%] h-0.5 rounded-full bg-white my-3">
+                    
+                    <p class="mt-5 text-lg w-[85%]">Deaf Reach Schools and Training Centers, a program of Family Educational Services Foundation (FESF)</p>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Third display Development Team -->
+        <div class="flex px-24 py-16 justify-evenly">
+
+            <div class="w-[405] align-center items-center">
+                <span class="font-bold text-4xl">Deaf Reach Schools, Colleges & Training Centers </span>
+                
+                <hr class="w-[10%] h-1 rounded-full bg-[#01944a] my-5">
+
+                <p class="mb-5 text-sm w-[85%] py-1">Deaf Reach Schools and Training Centers, a program of Family Educational Services Foundation (FESF), envisions a future where education is a reality for all deaf children in Pakistan. By investing in PSL learning resources, Deaf Reach is working to make literacy, education and skills training accessible to deaf students, and to capacitate teachers and families.</p>
+                
+            </div>
+            <div class="w-[45%]">
+                <img src="images/deafReachProgram_images/deaf-reach-program-01.jpg" alt="PSL Resource Image">
+            </div>
+            
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="flex justify-evenly w-full h-auto px-24 py-10 overflow-hidden bg-[#01944a] text-green-200 text-sm">
+
+            <!-- Quick Links -->
+            <div class="flex flex-col w-[30%] leading-7 tracking-wider">
+                <span class="font-semibold text-lg text-white py-2">Quick Links</span>
+                <a href="">- PSL Dictionary</a>
+                <a href="">- Learning Tutorials</a>
+                <a href="">- Teacher Tutorials</a>
+                <a href="">- PSL Stories</a>
+                <a href="">- Iqra Program</a>
+                <a href="">- Resources</a>
+                <a href="">- The Deaf Reach Program</a>
+                <a href="">- Contact Us</a>
+
+            </div>
+
+
+            <!-- Subscribe Portion -->
+            <div class="flex flex-col w-[30%] leading-8 tracking-wider">
+                <span class="font-semibold text-md text-white py-2">SUBSCRIBE</span>
+                <span>Subscribe to connect with us!</span>
+                <input type="text" name="" id="" placeholder="EMAIL" class="bg-white rounded-sm focus:bg-white focus:text-black w-[80%] inline placeholder:text-xs placeholder:pl-2">
+
+                <!-- Subscribe button -->
+                <button class="border-[0.1rem] border-white rounded-sm text-white py-1.5 text-xs font-semibold w-[80%] mt-5">SUBSCRIBE</button>
+            </div>
+            
+            
+
+
+            <!-- Download PSL App -->
+            <div class="flex flex-col w-[30%] leading-10 justify-centre items-start align-centre tracking-wider">
+                <span class="font-semibold text-lg text-white py-2 ">Download PSL App</span>
+                <span>Download PSL App</span>
+
+
+                <!-- Link With Images -->
+                <div class="flex">
+                    <a href="https://play.google.com/store/apps/details?id=com.grappetite.fesf.psl" class="pr-5">
+                        <img src="images/home_images/playstore.png" alt="Play Store Button">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/pakistan-sign-language-psl/id955003505">
+                        <img src="images/home_images/appstore.png" alt="Apple Store Button">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
