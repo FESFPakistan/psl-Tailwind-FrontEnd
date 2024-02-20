@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Your+Font&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="z-100">
+        <!-- Navigator Bar -->
+        <div class="flex w-full space-x-7 fixed bg-white items-center justify-centre ">
+            <div><img src="images/home_images/psl-logo.png" alt="PSL logo" class="p-1 w-[70%] h-[90%]"></div>
+            <a href="index.html" class="hover:text-[#01944a] align-center">Home</a>
+            <a href="pslDictionary.html" class="hover:text-[#01944a] align-centre">PSL Dictionary</a>
+            <a href="teacherTutorials.html" class="hover:text-[#01944a] align-centre">Teacher Tutorials</a>
+            <a href="pslStories.html" class="hover:text-[#01944a] align-centre">PSL Stories</a>
+            <a href="learningTutorials.html" class="hover:text-[#01944a] align-centre">Learning Tutorials</a>
+            <a href="iqraProgram.html" class="hover:text-[#01944a] align-centre">Iqra Program</a>
+            <a href="resources.html" class="hover:text-[#01944a] align-centre">Resources</a>
+            <div id="aboutUs" class="hover:text-[#01944a] align-centre">About Us</div>
+        </div>
+
+
+        <!-- DropDown Of About -->
+        <div id="dropdown" class="flex flex-col text-black text-[0.9rem] w-[17%] shadow-lg bg-white fixed absolute top-12 right-32 hidden">
+            <a href="about_PSL.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">About PSL</a><hr class="w-[80%]">
+            <a href="about_FESF.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">About FESF</a><hr>
+            <a href="deafReachProgram.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">The Deaf Reach Program</a><hr>
+            <a href="testimonials.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">Testimonials</a><hr>
+            <a href="" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">Partners</a><hr>
+            <a href="" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">FAQs</a>
+        </div>
+
+
+        <hr class="w-full h-2 rounded-full bg-[#01944a]">
+
+
+        <div class="flex flex-col">
+            <div class="w-full h-auto hidden"></div>
+            <div class="w-full h-5 bg-[#01944a]"></div>
+            <div class="flex align-centre justify-centre">Search</div>
+        </div>
+    </div>
+
+
+    <div id="container" class="w-full h-full">
+        
+    </div>
+
+    
+    
+
+
+    <script>
+        const names = ["Afsha Imtiaz","Ahsan Ali Mangi","Dr. Izhar Hashmi","Dr. Mujahid Kamran","T. Alan Hurwitz","Bedour al Raqbani","Andrew de Carpentier","Dr. Thomas Raco","Silvana Veinberg","Stephanis Greef",
+        "Professor Amy T. Wilson,","Geoffrey S. Poor","Jeffrey S. Bravin,","Debra Russel","Dr. Joseph Murray"
+        ];
+
+        const posts = ["Director General, Special Education Punjab Lahore, Pakistan","Secretary, Special Education Sindh Karachi, Pakistan","Program Director, Punjab Welfare Trust for the Disabled Lahore, Pakistan","Vice Chancellor, Univerity of the Punjab Lahore, Pakistan","President, Gallaudet University Washington D.C. - USA",
+        "Director, Kalimati Language Center Dubai - UAE","Director, HLID Institute Salt - Jordan","NTID, Rochester Institute of Technology New York - USA",
+        "Executive Director, Canales Creciendo en Señas Argentina – South America","Interim President & CEO Canadian Hearing Society","Director Int’l Development, Gallaudet University Washington D.C. - USA","Project Director ASL Video Dictionary, NTID, Rochester Institute of Technology New York - USA","Executive Director, American School for the Deaf Connecticut - USA","President World Association of Sign Language Interpreters","President, World Federation of the Deaf Finland"
+        ];
+
+        const remarks = ["I am thrilled with the PSL Learning Units. I want to change things in Special Education. Let me know if there’s anything you want to do, and I will help you to implement it. We welcome any suggestions for changes and improvement to Deaf education.","We are proud to be a part of this first of its kind solution that addresses the lack of quality content for Deaf education. We fully support this project.","I haven’t seen such a unique approach to special education and I believe it will create miracles. I and PWTD are at your disposal and we will try to help as much as we can in this noble cause.","I am particularly touched by the perseverance with which FESF has succeeded in setting up world class educational services for deaf children in my country.The PSL Learning Resources are a unique and pioneering contribution which will serve to enrich the lives of many deaf children and their families. It will also enable non-deaf people like me to learn the language and be able to communicate with the Deaf Community. The website, phone app and book open up a whole new range of possibilities. I congratulate the FESF leadership and wish it all the success. I also look forward to a productive interaction between FESF and the University of the Punjab.","As President of Gallaudet University, I take genuine interest in the Deaf Reach Program that has produced a free online PSL Lexicon geared towards deaf and hard of hearing children and adults. It will benefit their families, those who work in deaf education, as well as employers and the community at large. I applaud the Pakistani Deaf Community for its ingenuity and initiative in developing this informative and resourceful lexicon that will enhance the quality of life for deaf and hard of hearing people in Pakistan.","I am thrilled to witness the birth of this fascinating initiative. The energy behind the creation of the Pakistani Sign Language Digital Resources is so contagious. I am impressed by the efficiency, productivity and the overall approach. This project will definitely be a landmark in the history of deaf education in Pakistan, as well as an influence on Deaf Culture in the region. Well done to an amazing team!","This multi-lingual Sign Language dictionary in both Urdu and English is a wonderful achievement. Together with the complementary applications of Website, DVDs, Phone App and other local languages this is a tremendously rich resource.","The PSL Digital Resources website is one of the most important new developments in the education and enrichment of Pakistani Deaf people in the past 100 years. It defines a common language that can be used by teachers, interpreters, and health-related professionals who serve the Deaf. This unique resource is a model for others seeking to educate and enhance the lives of their own deaf citizens in the future.","The Deaf Reach Program is a model in the field of deaf education. The PSL Digital Resources opens the doors for the Deaf community to information, literature and knowledge. You have our support and congratulations on this great achievement!","The Canadian Hearing Society commends FESF on the launch of its newly created PSL Digital Resources. A first of its kind in the region, and provides a much-needed tool for Deaf students and their families, and those involved in Deaf education","The free, easy to access and fun PSL materials are excellent as a resource for teachers, families, and community members. This innovative technology fosters development of bilingual deaf children who have increased access to their world and can grow more fully intellectually, cognitively, and emotionally. Really impressive!","An amazing resource. Extremely comprehensive, excellent production values, and easy to use. This is a culturally sensitive, multi-language tool. Signs are presented in beautiful video by a variety of signers, and are accompanied by both spoken and written English, spoken and written Urdu, and graphics illustrating the meaning.","Kudos to FESF for developing this PSL Lexicon - especially having it available online and via mobile devices. You are providing language and communication access as well as sign language awareness to everyone throughout your country and worldwide! Congratulations and as always we look forward to finding ways where we can work together!","I LOVE the website - what a wonderful resource! Clean, crisp, easy to navigate, FAQ useful answers, ordering DVD, books, or app sounds great. Sent a test email - it went through. Quality of video images - excellent. Well done and congratulations!","This is an excellent website! I would like to use it as a model of what can be done, and see how we can help to build capacity for organizations working with the deaf in other developing countries."
+        ];
+
+        const commas = "images/testimonials_images/inverted-commas.svg";
+        const avatar = "images/testimonials_images/avatar.svg";
+        const Container = document.getElementById("container");
+        const leftDiv = "mx-24"
+        const rightDiv = "mx-80"
+
+
+        for(i = 0; i < (names.length); i++){
+            const mainDiv = document.createElement("div");
+            mainDiv.classList.add("flex", "flex-col", "justify-centre", "items-center", "w-[60%]", "mx-24","my-10" );
+
+            const contentDiv = document.createElement("div");
+            contentDiv.classList.add("flex", "flex-col", "rounded-lg", "shadow-2xl", "py-7", "justify-centre", "items-center", "relative");
+
+            const comma = document.createElement("img");
+            comma.src = commas;
+            comma.alt = "Inverted Commas";
+            
+            const para = document.createElement("p");
+            para.classList.add("text-[0.9rem]","p-10", "text-center");
+            para.textContent = remarks[i];
+
+            contentDiv.appendChild(comma);
+            contentDiv.appendChild(para);
+
+            const imgDiv = document.createElement("div");
+            imgDiv.classList.add("relative", "z-20 bottom-7", "w-[7%]", "h-[7%]", "rounded-full", "bg-white", "border", "border-[#01944a]");
+
+            const Avatar = document.createElement("img");
+            Avatar.src = avatar;
+            Avatar.alt = "Avatar";
+
+            imgDiv.appendChild(Avatar);
+
+            const name = document.createElement("span");
+            name.classList.add("text-2xl", "font-bold", "pb-2");
+            name.textContent = names[i];
+
+            const post = document.createElement("span");
+            post.classList.add("text-gray-500");
+            post.textContent = posts[i];
+
+            mainDiv.appendChild(contentDiv);
+            mainDiv.appendChild(imgDiv);
+            mainDiv.appendChild(name);
+            mainDiv.appendChild(post);
+
+            Container.appendChild(mainDiv);
+
+
+        }
+
+
+        const aboutUs = document.getElementById('aboutUs');
+        const dropDown = document.getElementById('dropdown');
+        const body = document.body
+    
+        aboutUs.addEventListener('click', function() {
+            dropDown.classList.toggle('hidden');
+        });
+
+        aboutUs.addEventListener('mouseenter', function() {
+            dropDown.classList.remove('hidden');           
+        });
+
+        aboutUs.addEventListener('mouseleave', function() {
+            dropDown.classList.add('hidden');
+        });
+
+        body.addEventListener('click', function(){
+            dropDown.classList.add('hidden');
+        })
+
+
+    </script>
+
+    <!-- <div class="flex flex-col justify-centre items-center w-[60%] mx-24 my-10">
+        <div class="flex flex-col rounded-lg shadow-2xl py-7 justify-centre items-center relative">
+            <img src="images/testimonials_images/inverted-commas.svg" alt="Inverted Commmas">
+            <p class="text-[0.9rem] p-10 text-center">"I am thrilled with the PSL Learning Units. I want to change things in Special Education. Let me know if there’s anything you want to do, and I will help you to implement it. We welcome any suggestions for changes and improvement to Deaf education."</p>
+        </div>
+        <div class="relative z-20 bottom-7 w-[7%] h-[7%] rounded-full bg-white border border-[#01944a]"><img src="images/testimonials_images/avatar.svg" alt="Avatar Image"></div>
+
+        <span class="text-2xl font-bold pb-2">Afsha Imtiaz</span>
+        <span class="text-gray-500">Director General, Special Education Punjab Lahore, Pakistan</span>
+    </div> -->
+
+
+
+</body>
+</html>
