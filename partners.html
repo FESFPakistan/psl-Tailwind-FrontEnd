@@ -16,27 +16,27 @@
 <body>
     <div class="z-100">
         <!-- Navigator Bar -->
-        <div class="flex w-full space-x-7 fixed bg-white items-center justify-centre ">
-            <div><img src="images/home_images/psl-logo.png" alt="PSL logo" class="p-1 w-[70%] h-[90%]"></div>
-            <a href="index.html" class="hover:text-[#01944a] align-center">Home</a>
+        <div class="z-50 flex w-full space-x-7 fixed bg-white items-center justify-centre">
+            <img src="images/home_images/psl-logo.png" alt="PSL logo" class="ml-3 my-2 w-[11%] h-auto">
+            <a href="index.html" class="hover:text-[#01944a] align-center ml-0">Home</a>
             <a href="pslDictionary.html" class="hover:text-[#01944a] align-centre">PSL Dictionary</a>
             <a href="teacherTutorials.html" class="hover:text-[#01944a] align-centre">Teacher Tutorials</a>
             <a href="pslStories.html" class="hover:text-[#01944a] align-centre">PSL Stories</a>
             <a href="learningTutorials.html" class="hover:text-[#01944a] align-centre">Learning Tutorials</a>
             <a href="iqraProgram.html" class="hover:text-[#01944a] align-centre">Iqra Program</a>
             <a href="resources.html" class="hover:text-[#01944a] align-centre">Resources</a>
-            <div id="aboutUs" class="hover:text-[#01944a] align-centre">About Us</div>
+            <span id="aboutUs" class="hover:text-[#01944a] align-centre">About Us</span>
         </div>
 
 
         <!-- DropDown Of About -->
-        <div id="dropdown" class="flex flex-col text-black text-[0.9rem] w-[17%] shadow-lg bg-white fixed absolute top-12 right-32 hidden">
+        <div id="dropdown" class="flex flex-col text-black text-[0.9rem] w-[17%] shadow-lg bg-white fixed absolute top-[9.6%] right-[12.5%] hidden">
             <a href="about_PSL.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">About PSL</a><hr class="w-[80%]">
             <a href="about_FESF.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">About FESF</a><hr>
             <a href="deafReachProgram.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">The Deaf Reach Program</a><hr>
             <a href="testimonials.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">Testimonials</a><hr>
-            <a href="" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">Partners</a><hr>
-            <a href="" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">FAQs</a>
+            <a href="partners.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">Partners</a><hr>
+            <a href="FAQs.html" class="py-1.5 px-5 hover:bg-[#01944a] hover:text-white">FAQs</a>
         </div>
 
 
@@ -161,17 +161,10 @@
     
             aboutUs.addEventListener('mouseenter', function() {
                 dropDown.classList.remove('hidden');
-                aboutUs.addEventListener('click', function() {
-                    dropDown.classList.toggle('hidden');
-                });
             });
     
-            // aboutUs.addEventListener('mouseleave', function() {
-            //     dropDown.classList.add('hidden');
-            // });
-    
             body.addEventListener('click', function(){
-                dropDown.classList.add('hidden');
+                dropdown.classList.add('hidden');
             })
     
         </script>
